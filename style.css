@@ -1,0 +1,143 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.firstDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #341f97;
+} 
+.Start {
+
+	width: 400px;
+}
+.welcome_form input,
+.welcome_form button{
+	display: block;
+    width: 100%;
+}
+.welcome_form input {
+	margin-bottom: 15px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+.welcome_form button {
+	padding: 20px 0px;
+	font-size: 22px;
+	border-radius: 40px;
+	border : none;
+	background-color: white;
+	color: #341f97;
+	transition:0.4s all;
+
+}
+.welcome_form button:hover {
+	transform: translateY(-5px);
+	cursor: pointer;
+
+}
+.welcome_form input:focus
+{
+	outline: none;
+}
+.quiz {
+	display: grid;
+	grid-template-rows: 60px auto;
+	background-color:white;
+	width: 800px;
+	height: 500px;
+
+
+}
+.quiz_header {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+    border-top-right-radius: 3px ;
+	border-top-left-radius: 3px;
+	box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.3);
+	z-index: 1;
+
+}
+.quiz_body {
+	background-color: #ecf0f1;
+	padding: 30px;
+
+}
+.quiz_user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 30px;
+}
+.quiz_timer {
+	display: flex;
+	justify-content: center;
+	padding-right: 20px;
+	background-color: #341f97;
+	color: white;
+	align-items:center;
+	font-size: 20px;
+	border: 1px solid white;
+}
+.option_group {
+	list-style: none;
+	margin: 30px 0px;
+
+}
+.option {
+	background-color: white;
+	width: 300px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+    border-radius: 100px;
+    border :2px solid transparent;
+}
+.option:hover{
+	cursor: pointer;
+	color:#341f97;
+	border: 2px solid black; 
+}
+.btn_next {
+	color: white;
+	background-color:#341f97;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 100px;
+	transition: 0.4s all;
+}
+.btn_next:hover{
+	cursor: pointer;
+	background-color: white;
+	color:#341f97 ;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3)
+	transform: translateX(-5px);
+	border:none;
+}
+.active {
+	color: white !important;
+	background-color: #341f97;
+}
+.trophy_icon {
+	font-size: 300px;
+	color: white;
+	padding-left: 30px;
+}
+.user_name,
+.user_score,
+.user_time {
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+}
